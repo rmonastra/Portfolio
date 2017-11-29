@@ -1,0 +1,208 @@
+h3 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+    font-size: 3.25vh;
+}
+
+.portgrid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 1em .5em;
+}
+
+.card {
+    display: grid;
+    grid-gap: .25em;
+    grid-template-columns: repeat(1, 1fr);
+    background: white;
+    width: 45vw;
+    height: 55vh;
+    box-shadow: .25em .25em .25em rgb(0, 0, 0);
+}
+.cardHeader {
+    font-size: 1.15em;
+    background: rgb(0, 0, 0);
+    color: white;
+    width: 45vw;
+    height: 5vh;
+}
+
+.card button {
+    border-radius: .5em;
+    color: white;
+    font-size: 1em;
+    background: rgb(49, 146, 146);
+}
+
+.pic {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+}
+
+@media screen and (min-width: 640px) and (max-width: 667px){
+    .portgrid {
+        display: grid;
+        grid-gap: .25em;
+        grid-template-columns: repeat(4, 1fr);
+       
+    }
+    .card {
+        font-size: .75em;
+        width: 22vw;
+        height: 75vh;
+    }
+    .cardHeader {
+        width: 22vw;
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portgrid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 1em 2em;
+    }
+    .card p {
+        font-size: 1.5em;
+    }
+    .card {
+        height: 75vh;
+        width: 45vw;
+    }
+    .cardHeader {
+       
+        text-align: center;
+        background: rgb(0, 0, 0);
+        color: white;
+        height: 5vh;
+        width: 45vw;
+    }
+    .card button {
+        height: 4vh;
+        width: 12vw;
+    }
+    .pic {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portgrid {
+        display: grid;
+        grid-gap: .25em;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 0 1em 1em;
+    }
+    .card {
+        font-size: 1em;
+        width: 23vw;
+        height: 40vh
+    }
+    .card button {
+        height: 4vh;
+        width: 12vw;
+    }
+    .pic {
+        width: 170px;
+        height: 170px;
+        object-fit: contain;
+    }
+    .cardHeader {
+        font-size: 1.5em;
+        width: 23vw;
+    }
+}
+
+@media only screen  and (min-width : 1224px)/* @media screen and (min-width: 1366px) */ {
+    .card {
+        width: 22vw;
+        height: 45vh;
+        font-size: 1em;
+    
+    }
+    .portgrid {
+        display: grid;
+        grid-gap: .25em;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 0 0 .7em;
+
+    }
+    .cardHeader {
+      
+        text-align: center;
+        background: rgb(0, 0, 0);
+        color: white;
+        height: 5vh;
+        width: 22vw;
+        font-size: 1.25em;
+    }
+    button {
+        width: 8vw;
+        height: 4vh;
+        border-radius: .5em;
+        color: white;
+        font-size: 1em;
+        background: rgb(49, 146, 146);
+    }
+    .pic {
+        height: auto;
+        width: auto;
+        max-width: 150px;
+        max-height: 150px;
+        margin: auto;
+    }
+    .card p {
+        font-size: 1.1em;
+    }
+}
+@media only screen  and (min-width : 1900px)/* @media screen and (min-width: 1366px) */ {
+    .card {
+        width: 22vw;
+        height: 45vh;
+        font-size: 1em;
+    
+    }
+    .portgrid {
+        display: grid;
+        grid-gap: .25em;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 0 0 2em;
+
+    }
+    .cardHeader {
+     
+        text-align: center;
+        background: rgb(0, 0, 0);
+        color: white;
+        height: 5vh;
+        width: 22vw;
+        font-size: 1.25em;
+    }
+    button {
+        width: 8vw;
+        height: 4vh;
+        border-radius: .5em;
+        color: white;
+        font-size: 1em;
+        background: rgb(49, 146, 146);
+    }
+    .pic {
+        height: auto;
+        width: auto;
+        max-width: 150px;
+        max-height: 150px;
+        margin: auto;
+    }
+    .card p {
+        font-size: 1.1em;
+    }
+}

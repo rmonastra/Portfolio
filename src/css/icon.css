@@ -1,0 +1,19 @@
+.icon {
+    color: white;
+    padding: .1em .25em .25em .25em;
+}
+
+.contactfooter {
+    display: none;
+}
+
+@media only screen and (min-width : 1880px) {
+    .icon {
+        font-size: 2.5em;
+        color: white;
+        padding: 0.2em .25em .25em .25em;
+    }
+    .contactfooter {
+        color: white;
+    }
+}

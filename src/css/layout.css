@@ -1,0 +1,295 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ .html,
+ body {
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ .grid {
+     display: grid;
+     grid-gap: .1em;
+     grid-template-columns: repeat(1, 1fr);
+     
+ }
+ 
+ .section-A {
+     background: url("../images/pexels6.jpg") no-repeat center center;
+     background-size: 100%;
+     height: 40vh;
+ }
+ 
+ .section-B {
+     background: rgb(49, 146, 146);
+    
+ }
+ 
+ .section-C {
+     text-align: center;
+     background: rgb(49, 146, 146);
+     padding-bottom: 5em;
+ }
+ 
+ .section-D {
+     background: rgb(49, 146, 146);
+    
+     padding-bottom: 8em;
+ }
+ 
+ h3 {
+     color: white;
+     text-align: center;
+     text-shadow: 1px 1px #000000;
+     font-size: 3.25vh;
+ }
+ 
+ .header {
+     vertical-align: center;
+     font-size: 4vh;
+     text-align: center;
+     padding: .25em 0 0 0;
+     background: black;
+     color: white;
+     width: 100vw;
+     height: 6vh;
+     position: fixed;
+     top:0;
+ }
+ 
+ .footer {
+     text-align: center;
+     background: black;
+     color: white;
+     width: 100vw;
+     height: 6vh;
+     bottom: 0;
+     position: fixed;
+ }
+ /* -----------------About Section ------------------------*/
+ 
+ .aboutp {
+     color: white;
+     width: 90vw;
+     margin: auto;
+     /*      text-shadow: 1px 1px #000000;
+     font-size: 1.15em; */
+ }
+ 
+ .aboutp p {
+     width: 100%;
+ }
+ 
+ .skills {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ }
+ 
+ .typist {
+     text-align: center;
+     font-size: 3.25vh;
+     padding: 10em 2em 1em 2em;
+ }
+ /*-------------------form---------------------------*/
+.form{
+    overflow: hidden;
+    color:white;
+    margin-left: 2em;
+}
+.form button{
+    margin-left: 30%;
+    margin-top: 1%;
+    background: #fff;
+    color: rgb(49, 146, 146);
+    border-radius: .5em;
+    height: 5vh;
+    width: 20vw;
+}
+ /* ------------------Media Queries----------------------- */
+ 
+ @media screen and (min-width: 640px)  and (max-width: 667px){
+    h3 {
+        font-size: 1.5em;
+    }
+    .section-A {
+        height: 50vh;
+    }
+    .section-B {
+        height: 80vh;
+    }
+    .form{
+        margin-left: 33%;
+        font-size: .75em;
+    }
+    .form button{
+        width: 12vw;
+        height: 6vh;
+        margin-left: 18%;
+    }
+    .typist {
+        padding: 4em 1em 0 1em;
+    }
+    .footer {
+        height: 10vh;
+    }
+}
+ 
+ @media screen and (min-width: 768px) {
+     h3 {
+         font-size: 2.1em;
+     }
+     .section-B {
+         height: 35vh;
+     }
+     .section-A {
+         height: 45vh;
+         padding-bottom: 20em;
+     }
+     .section-C {
+       /*   height: 100vh; */
+     }
+     .section-D {
+        /*  height: 55vh; */
+     }
+     .form{
+         margin-left: 33%;
+     }
+     .form button{
+         margin-left: 12%;
+     }
+     .footer {
+         height: 5vh;
+     }
+     .typist {
+         text-align: center;
+         font-size: 4vh;
+         padding: 10em 2em 1em 3em;
+     }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+     .aboutp {
+         font-size: 1.55em;
+     }
+     .section-C {
+         /* height: 55vh; */
+     }
+     .section-D {
+         height: 45vh;
+     }
+     .skills {
+         padding-left: 5em;
+     }
+     .typist {
+         text-align: center;
+         font-size: 4vh;
+         padding: 9.5em 2em 1em 1.2em;
+     }
+     .form{
+        margin-left: 38%;
+    }
+    .form button{
+        height: 2vh;
+        width: 13vw;
+        margin-left: 10%;
+    }
+ }
+ @media only screen and (min-width : 1224px)/*  @media screen and (min-width: 1366px) */ {
+    .h3 {
+        font-size: 2em;
+    }
+     .section-A {
+        background: url("../images/pexels6.jpg") no-repeat center center fixed;
+        background-size: 100%;
+         height: 65vh;
+     }
+     .section-B{
+        height: 45vh;
+    }
+     .section-C {
+         height: 70vh;
+         
+     }
+     .section-D {
+      height: 70vh;
+     }
+     .typist {
+         text-align: center;
+         font-size: 4vh;
+         padding: 8em 1em 1em 0;
+     }
+     .aboutp {
+         font-size: 1.1em;
+     }
+     .skills {
+         padding-left: 12em;
+     }
+     .form{
+         font-size: 1.25em;
+         margin-left: 39%;
+     }
+     .inputbox{
+         width: 15em;
+     }
+     .areabox{
+         width: 24em;
+        overflow:hidden
+     }
+     .form button{
+         margin-left: 13%;
+         font-size: .75em;
+         background: #fff;
+         color: rgb(49, 146, 146);
+         height: 4vh;
+         width: 6vw;
+     }
+ } 
+ @media only screen and (min-width : 1880px) {
+    .h3 {
+        font-size: 2em;
+    }
+     .section-A {
+        background-size: 100%;
+         height: 65vh;
+     }
+     .section-B{
+        height: 35vh;
+    }
+     .section-C {
+         height: 65vh;
+         
+     }
+     .section-D {
+      height: 50vh;
+     }
+     .typist {
+         text-align: center;
+         font-size: 4vh;
+         padding: 8em 1em 1em 0;
+     }
+     .aboutp {
+         font-size: 1.65em;
+     }
+     .skills {
+         padding-left: 12em;
+     }
+     .form{
+         font-size: 1.35em;
+         margin-left: 42%;
+     }
+     .inputbox{
+         width: 15em;
+     }
+     .areabox{
+         width: 24em;
+        overflow:hidden
+     }
+     .form button{
+         margin-left: 8%;
+         background: #fff;
+         color: rgb(49, 146, 146);
+         height: 4vh;
+         width: 8vw;
+     }
+ }
+ 
